@@ -1,0 +1,15 @@
+app:
+  name: poi-gateway-app
+  namespace: evanshortiss
+  cluster: .apps.summit23bis.17gd.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23JanusN/evanshortiss-gateway
+  org: Summit23JanusN
+  name: evanshortiss-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: evanshortiss/poi-gateway-app
+  tag: latest
